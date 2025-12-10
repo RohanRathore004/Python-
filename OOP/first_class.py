@@ -1,3 +1,4 @@
+# class - class is just named group properties of function:
 class Person:
     name = input("Enter the your name here: ")
     college = input("Enter the your college name here: ")

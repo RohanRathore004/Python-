@@ -1,4 +1,4 @@
-l = [1,2,3]
-l2 = [1,2,3]
-print(l == l2)
-print(l is l2)
+number1 = int(input("Enter the number here:"))
+number2 = int(input("Enter the number here:"))
+avg = lambda a,b: (a+b)//2
+print(avg(number1,number2))

@@ -11,7 +11,6 @@ print("\n")
 # We can also get the items of list with for loop - 
 for item in l:
     print(item)
-
 # We can also check the index of list - 
 print(l[0])
 print(l[1])
