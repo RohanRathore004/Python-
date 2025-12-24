@@ -6,7 +6,7 @@ There are three types of access modifier -
 3. protected - Access Modifier
 
 '''
-# Note - In python there is not concept of public private and protected but peoples use this only for convention.
+# Python does not enforce public, private, or protected access modifiers; they exist only as naming conventions followed by developers.
 
 
 # public access modifier - (Anyone can access of this - )

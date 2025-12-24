@@ -1,4 +1,5 @@
-# Constructor  - We use of constructor in python for taking the value on the run time.
+# A constructor in Python is used to initialize object variables at the time of object creation; it can be parameterized or default.
+
 
 class First:
     def __init__(self,name,city):   # This is parameterised constructor - 

@@ -1,22 +1,30 @@
 """
-Abstraction : Hinding the implemention details of the class and showing the only essention details to user is called Abstraction:
+Encapsulation : Wrapping data (variables) and methods (functions) into a single unit (class) 
+and protecting the data from direct access is called Encapsulation.
 
-Note - The internal working is hidden:
-We go to ATM machine to take money but we don't need to know how the internally process is working in ATM machine.
+Note – Data is accessed only through class methods.
 
-Hinding the  unneccessary information and showing only the important information to user :
+Example:
+We cannot directly change money in an ATM machine; we must use buttons 
+(deposit / withdraw) to access it safely.
 
 """
-
-class Car:
-    def __init_(self):
-        self.acc = False
-        self.br= False
-        self.cl = False
+class BankAccount:
+    def __init__(self,amount):
+        self.__amount = amount
     
-    def start(self):
-        self.cl = True
-        self.acc= True
-        print("Car started...")
-a = Car()
-a.start()
+    def withdraw(self,amount):
+        if amount <= self.__amount:
+           self.__amount = self.__amount  - amount
+           print("Withdrawan successfull")
+           print(f"Banlance: {self.__amount}")
+        else:
+            print("Insufficient amount")
+
+    def show_balance(self):
+        print(self.__amount)
+
+
+a = BankAccount(6000)
+a.withdraw(400)
+a.show_balance()
